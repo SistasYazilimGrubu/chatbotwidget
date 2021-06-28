@@ -1,0 +1,47 @@
+.paragraph-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.conversation-container .list-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-menu ul li:before {
+  content: '\25CF';
+  margin: 0 10px 0 0;
+  color: #e51a92;
+  font-size: 10px;
+}
+
+.conversation-container .list-menu {
+  margin: 0;
+  overflow: unset;
+  font-size: 14px;
+  font-family: 'Hind', sans-serif;
+}
+
+.conversation-container {
+  .menu-element {
+    width: 100%;
+    background-color: #194E91;
+    color: #fff;
+    padding: 0;
+    line-height: 36px;
+    margin: 10px 0 0;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .menu-element:hover {
+    background-color: #062E54;
+  }
+}

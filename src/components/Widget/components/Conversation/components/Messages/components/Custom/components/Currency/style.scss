@@ -1,0 +1,93 @@
+.currency {
+  display: flex;
+  flex-direction: column;
+
+  .flag {
+    margin-bottom: 0;
+
+    .body {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .image {
+      margin-bottom: -9px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .trends {
+    height: auto;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    margin-top: 5px;
+
+    .trend {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .trend-img {
+      margin-top: 0;
+      margin-right: 5px;
+      width: 14px;
+    }
+
+    .parite {
+      margin-left: 6%;
+    }
+
+    .parite b {
+      display: inline-block;
+      font-weight: 600;
+      padding-right: 5px;
+    }
+  }
+
+  .amount {
+    font-size: 14px;
+  }
+
+  .forex-text {
+    margin-top: -5%;
+    font-size: 14px;
+
+    .operation {
+      width: 100%;
+    }
+  }
+
+  .forex {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 12px;
+
+    .operation {
+      width: auto;
+      font-weight: normal;
+      line-height: 21px;
+    }
+
+    .operation b {
+      display: inline-block;
+      padding-right: 5px;
+      font-weight: 600;
+    }
+  }
+
+  .date {
+    display: block;
+    font-size: 14px;
+    color: #AFC1D7;
+    margin-top: 15px;
+  }
+
+  .date p {
+    margin: 0;
+  }
+}

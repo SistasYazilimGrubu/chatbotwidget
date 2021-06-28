@@ -1,0 +1,104 @@
+{
+    "menuAndDetailsInfoLinkModel": {
+        "categoryType": "MenuAndDetailInfoLink",
+        "menu": [
+            "Para Yatırma",
+            "Para Çekme",
+            "Kredi Kartı Borç Sorgulama",
+            "Kredi Kartı Limit Sorgulama",
+            "Kredi Kartı Borç Ödeme",
+            "https://www.vakifkatilim.com.tr/tr/bireysel/kamu-bankalari-atmleri-ucretsiz-olarak-hizmetinizde"
+        ],
+        "title": "Kamu bankaları ATM’leri ücretsiz olarak hizmetinizde. Vakıf Katılım, Emlak Bank, Ziraat Katılım, Halkbank, Vakıfbank, Ziraat Bankası ve PTT’ye ait tüm ATM’ler işlem limitleri dahilinde hiçbir ücret ödemeden kullanılabilmektedir. ",
+        "type": "category"
+    },
+    "quickReplyModel": {
+        "categoryType": "QuickReply",
+        "menu": [
+            "İşyeri Sigortası",
+            "Leasing All Risk Sigortası",
+            "İnşaat Sigortası",
+            "Nakliyat Sigortası"
+        ],
+        "title": "Lütfen seçim yapınız.",
+        "type": "category"
+    },
+    "paragraphWithMenuModel": {
+        "categoryType": "ParagraphWithMenu",
+        "menu": [
+            {
+                "src": "https://www.vakifkatilim.com.tr/tr/bireysel/bireysel-sigortacilik-hizmetleri/zorunlu-deprem-sigortasi-dask",
+                "title": "Detaylı Bilgi"
+            },
+            {
+                "src": null,
+                "title": "En Yakın Vakıf Katılım"
+            }
+        ],
+        "text": "Alp – Himalaya kuşağının ortasında konumlanan Türkiye deprem açısından riskli bir bölgedir. Deprem afetinden sonra ayakta kalmak, çıkabilecek masrafları kolayca karşılamak için siz de sallanmadan Vakıf Katılım şubelerine gelerek deprem sigortanızı yaptırın.",
+        "title": "Zorunlu Deprem Sigortası",
+        "type": "category"
+    },
+    "linkModel": {
+        "categoryType": "Link",
+        "menu": [
+            {
+                "src": "https://www.vakifkatilim.com.tr/tr/subesiz-bankacilik/atm",
+                "title": "Detaylı Bilgi"
+            }
+        ],
+        "title": "ATM İşlem Limitleri hakkında bilgi almak için;",
+        "type": "category"
+    },
+    "linkAndQuickReplyModel": {
+        "categoryType": "LinkAndQuickReply",
+        "menu": [
+            {
+                "src": "https://www.vakifkatilim.com.tr/tr/bireysel/kartlar/vkart",
+                "title": "Detaylı Bilgi"
+            },
+            {
+                "src": null,
+                "title": "En Yakın Vakıf Katılım"
+            }
+        ],
+        "title": "VKart başvurusu yapmak için en yakın şubemizi ziyaret edebilisiniz.",
+        "type": "category"
+    },
+    "menuModel": {
+        "categoryType": "Menu",
+        "menu": [
+            "Para yatırma",
+            "Para çekme",
+            "Bakiye sorgulama",
+            "Kredi kartı borç sorgulama",
+            "Kredi kartı limit sorgulama",
+            "Kredi kartı borç ödeme"
+        ],
+        "title": "Dijital kanallarımızda Havale ",
+        "type": "category"
+    },
+    "quickReplyWithReturnValueModel": {
+        "categoryType": "QuickReplyWithReturnValue",
+        "menu": [
+            {
+                "returnValue": "Türk Lirası",
+                "title": "TL"
+            },
+            {
+                "returnValue": "Dolar",
+                "title": "USD"
+            },
+            {
+                "returnValue": "Euro",
+                "title": "EURO"
+            },
+            {
+                "returnValue": "Altın",
+                "title": "ALTIN"
+            }
+        ],
+        "title": "Kâr payı hesaplayacağınız para birimini seçiniz",
+        "type": "category"
+    }
+}

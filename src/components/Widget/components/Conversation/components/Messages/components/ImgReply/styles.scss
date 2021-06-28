@@ -1,0 +1,22 @@
+.image {
+  .text {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .details {
+    object-fit: scale-down;
+    max-width: 100%;
+    padding-top: 15%;
+    width: 75%;
+    height: auto;
+
+    .frame {
+      object-position: 0 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+  

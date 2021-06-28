@@ -1,0 +1,133 @@
+{
+    "currencyModel": {
+        "custom": {
+            "custom": {
+                "custom": {
+                    "type": "currency",
+                    "currency": "Dolar",
+                    "forexBuying": 5.7,
+                    "forexSelling": 5.6,
+                    "amount": "50",
+                    "result": "280.0",
+                    "date": "16:43:40 - 25:11:2019"
+                }
+            },
+            "avatar": "http://localhost:28080/widget/content/img/bot.png"
+        }
+    },
+    "locationModel": {
+        "custom": {
+            "custom": {
+                "custom": {
+                    "type": "maps",
+                    "arr": [
+                        {
+                            "city": "Adana",
+                            "town": "SEYHAN",
+                            "address": "Kuruköprü Mahallesi Sefa Özler Caddesi Veli Gözcan İş Hanı No:  6/A Adana",
+                            "lat": "36.987563",
+                            "long": "35.324635"
+                        },
+                        {
+                            "city": "Adana",
+                            "town": "ÇUKUROVA",
+                            "address": "Güzelyalı Mah. Turgut ÖZAL Bulv. Hasel Apt. No: 122/B Çukurova  /Adana",
+                            "lat": "37.048725",
+                            "long": "35.294621"
+                        }
+                    ]
+                }
+            },
+            "avatar": "http://localhost:28080/widget/content/img/bot.png"
+        }
+    },
+    "paragraphModel": {
+        "custom": {
+            "custom": {
+                "custom": {
+                    "type": "paragraph",
+                    "menu": [
+                        {
+                            "title": "selam",
+                            "src": "testt source sadsasdasdasdasd"
+                        }
+                    ]
+                }
+            },
+            "avatar": "http://localhost:28080/widget/content/img/bot.png"
+        }
+    },
+    "categoryModel": {
+        "custom": {
+            "custom": {
+                "custom": {
+                    "categoryType": "ParagraphWithMenu",
+                    "menu": [
+                        {
+                            "src": "https://www.vakifkatilim.com.tr/tr/bireysel/bireysel-sigortacilik-hizmetleri/zorunlu-deprem-sigortasi-dask",
+                            "title": "Detaylı Bilgi"
+                        },
+                        {
+                            "src": null,
+                            "title": "En Yakın Vakıf Katılım"
+                        }
+                    ],
+                    "text": "Alp – Himalaya kuşağının ortasında konumlanan Türkiye deprem açısından riskli bir bölgedir. Deprem afetinden sonra ayakta kalmak, çıkabilecek masrafları kolayca karşılamak için siz de sallanmadan Vakıf Katılım şubelerine gelerek deprem sigortanızı yaptırın.",
+                    "title": "Zorunlu Deprem Sigortası",
+                    "type": "category"
+                }
+            },
+            "avatar": "http://localhost:28080/widget/content/img/bot.png"
+        }
+    },
+    "calculationResultModel": {
+        "custom": {
+            "custom": {
+                "custom": {
+                    "type": "calculationResults",
+                    "title": "120000 TL'lik 12 aylık arsa finansmanına ait taksit tutarı ve kar oranınızı aşağıda paylaşıyorum.",
+                    "menu": [
+                       {
+                          "title": "Taksit Tutarı",
+                          "value": "1200.0"
+                       },
+                       {
+                          "title": "Kar Oranı",
+                          "value": "12"
+                       }
+                    ],
+                    "button": {
+                       "title": "Ödeme Planı",
+                       "img": "",
+                       "src": "https://www.vakifkatilim.com.tr/tr/bireysel/finansman-turleri/finansman-hesaplama?loantype=K&loanAmount=250.000&InstallmentAmount=60"
+                    }
+                 }
+            }
+        }
+    },
+    "redirectChatOptionsModel": {
+        "custom": {
+            "custom": {
+                "custom": {
+                    "type": "changeChatMessageTarget",
+                    "title": "Example Title",
+                    "menu": [
+                        {
+                            "title": "Bürüt Oran",
+                            "value": "250000"
+                        },
+                        {
+                            "title": "Net Oran",
+                            "value": "245000"
+                        }
+                    ],
+                    "button": {
+                        "title": "Ödeme Planı",
+                        "src": "https://www.vakifkatilim.com.tr/tr/bireysel/hesaplar/kar-payi-hesaplama?fec=1&grossAmount=250.000&maturityTerm=180"
+                    }
+                }
+            },
+            "avatar": "http://localhost:28080/widget/content/img/bot.png"
+        }
+    }
+}

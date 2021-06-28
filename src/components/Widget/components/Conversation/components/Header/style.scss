@@ -1,0 +1,182 @@
+@import "variables.scss";
+@import "common.scss";
+
+.conversation-container {
+  .tooltip {
+    z-index: 99999999999999999999;
+    background-color: #E51A92; //Bu kısım IE var desteklemediği için kullanıldı. IE de default renk ayarları kullanılacaktır.
+    background-color: var(--widget-color, #E51A92);
+    position: absolute;
+    padding: 3%;
+    border-radius: 7px;
+    float: none;
+  }
+
+  .return-bot-div {
+    .tooltip {
+      right: 65px;
+    }
+  }
+
+  .question-image-div {
+    .tooltip {
+      right: 35px;
+    }
+  }
+
+  .header {
+    background-color: #062E54;
+    background-color: var(--header-color, #062E54);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 55px;
+    font-family: 'Hind', sans-serif;
+
+    .question-image {
+      position: absolute;
+      right: 17px;
+      top: 17px;
+      margin: 0;
+      width: 22px;
+      float: none;
+      cursor: pointer;
+    }
+
+    .return-bot {
+      position: absolute;
+      right: 55px;
+      top: 17px;
+      margin: 0;
+      width: 22px;
+      float: none;
+      cursor: pointer;
+    }
+
+    .minimize-image {
+      cursor: pointer;
+    }
+  }
+
+  .title {
+    font-size: 18px;
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+    padding: 0 0 0 17px;
+    font-weight: 600;
+    text-align: left !important;
+  }
+
+  .header-buttons {
+    position: static;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .close-button {
+    display: none;
+  }
+
+  .toggle-fullscreen-button {
+    @include header-button-fs;
+  }
+
+  .toggle-fullscreen {
+    @include header-icon-fs;
+  }
+
+  .loading {
+    background-color: $grey-3;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 0 5px;
+    font-family: $roboto;
+    font-size: 14px;
+  }
+}
+
+.minimize-button {
+  display: none;
+}
+
+.widget-embedded {
+  .header {
+    display: none;
+  }
+}
+
+.full-screen {
+  .header {
+    @include header-fs;
+  }
+
+  .title {
+    @include title-fs;
+  }
+
+  .close-button,
+  .toggle-fullscreen-button {
+    @include header-button-fs;
+  }
+
+  .close,
+  .toggle-fullscreen {
+    @include header-icon-fs;
+  }
+
+  .loading {
+    @include loading-fs;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .conversation-container {
+    .header {
+      @include header-fs;
+    }
+
+    .tooltips {
+      display: none !important;
+    }
+
+    .title {
+      font-size: 18px;
+      font-family: 'Hind', sans-serif;
+      margin: 0;
+      padding: 0 0 0 17px;
+      font-weight: 600;
+      text-align: center !important;
+    }
+
+    .minimize-button {
+      display: block;
+      position: absolute;
+      left: 17px;
+      top: 16px;
+      margin: 0;
+      width: 25px;
+      float: left;
+      cursor: pointer;
+    }
+
+    .close-button {
+      @include header-button-fs;
+    }
+
+    .close {
+      @include header-icon-fs;
+    }
+
+    .toggle-fullscreen-button, .toggle-fullscreen {
+      display: none;
+    }
+
+    .loading {
+      @include loading-fs;
+    }
+  }
+}

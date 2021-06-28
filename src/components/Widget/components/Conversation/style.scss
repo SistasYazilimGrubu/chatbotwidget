@@ -1,0 +1,120 @@
+@import "common.scss";
+@import "variables.scss";
+@import "animation.scss";
+
+.conversation-container {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-name: slide-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: .5s;
+  -moz-animation-name: slide-in;
+  -moz-animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-duration: .5s;
+  animation-name: slide-in;
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 370px;
+  pointer-events: all;
+}
+
+.slide-out {
+  @include animation(0, 0.5s, slide-out);
+}
+
+.typing-animation {
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+.widget-embedded {
+  .conversation-container {
+    @include animation(0, 0s, slide-in);
+    @include conversation-container-fs;
+    overflow: unset;
+  }
+
+  .slide-out {
+    @include animation(0, 0s, slide-out);
+  }
+}
+
+.full-screen {
+  .conversation-container {
+    border-radius: 0;
+    @include conversation-container-fs;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .conversation-container {
+    @include conversation-container-fs;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.messages-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+  background-color: #FFF;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  background-color: #194E91;
+}
+
+.information-form::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #194E91;
+}
+
+.information-form::-webkit-scrollbar {
+  width: 6px;
+  background-color: #194E91;
+}
+
+.information-form::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #F5F5F5;
+}

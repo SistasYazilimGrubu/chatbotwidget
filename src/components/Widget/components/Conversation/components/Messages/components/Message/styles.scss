@@ -1,0 +1,69 @@
+@import "variables.scss";
+@import "common.scss";
+
+.conversation-container {
+  .message {
+    margin: 15px;
+    display: flex;
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+    border-radius: 0;
+    flex-shrink: 0;
+
+    .markdown {
+      p {
+        margin: 0;
+      }
+
+      img[src*='tr.svg'] {
+        max-width: 22px;
+        top: 2px;
+        left: 2px;
+        position: relative;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .client {
+    background-color: #F0F4F9;
+    border: 1px solid #DAE5F2;
+    color: #062E54;
+    border-radius: 15px 0 15px 15px;
+    padding: 15px;
+    max-width: 255px;
+    text-align: left;
+    font-family: var(--response-font-family, 'Hind');
+    font-weight: 400;
+    font-size: var(--response-font-size, 14px);
+    overflow-wrap: break-word;
+    margin-top: 0;
+    margin-left: auto;
+    width: auto;
+  }
+
+  .client-avatar {
+    margin-left: 5px;
+  }
+
+  .response {
+    background-color: #F0F4F9;
+    border: 1px solid #DAE5F2;
+    color: #062E54;
+    border-radius: 0 15px 15px 15px;
+    padding: 15px;
+    max-width: 100%;
+    text-align: left;
+    font-family: var(--response-font-family, 'Hind');
+    font-weight: 400;
+    font-size: var(--response-font-size, 14px);
+    overflow-wrap: break-word;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* For markdown elements created with default styles */
+  .message-text {
+    margin: 0;
+  }
+}

@@ -1,0 +1,182 @@
+.location .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+.location .slideshow-container .location-fade {
+  -webkit-animation-name: location-fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: location-fade;
+  animation-duration: 1.5s;
+  width: 100%;
+}
+
+.location .slideshow-container .location-fade .body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.location .slideshow-container .location-fade .body .locationHeader {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DAE5F2;
+  padding-right: 100px;
+  align-items: center;
+  max-width: 92%;
+}
+
+.location .slideshow-container .location-fade .body .locationHeader .image {
+  align-items: center;
+}
+
+.location .slideshow-container .location-fade .body .locationHeader .image img {
+  width: 20px;
+}
+
+.location .slideshow-container .location-fade .body .locationHeader .locationInfo p {
+  margin: 0 0 0 10px;
+}
+
+.location .slideshow-container .location-fade .body .locationHeader .locationInfo p:first-of-type {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.location .slideshow-container .location-fade .body .locationHeader .locationInfo p:last-of-type {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.location .slideshow-container .location-fade .body .address {
+  text-align: left;
+  margin: 10px 0;
+  max-width: 255px;
+}
+
+.location .slideshow-container .location-fade .body .properties .propertyFirst {
+  display: inline-block;
+  max-width: 90px;
+  width: 100%;
+}
+
+.location .slideshow-container .location-fade .body .properties .propertySecond {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.location .slideshow-container .location-fade .numbertext {
+  color: #062E54;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: -5px;
+  right: 20%;
+}
+
+.location .slideshow-container .next,
+.location .slideshow-container .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 25px;
+  padding: 0;
+  margin-top: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.location .slideshow-container .next img,
+.location .slideshow-container .prev img {
+  width: 25px;
+  height: 25px;
+}
+
+.location .slideshow-container .next img:disabled,
+.location .slideshow-container .prev img:disabled {
+  width: 25px;
+  cursor: auto;
+}
+
+.location .slideshow-container .next {
+  right: 0;
+}
+
+.location .slideshow-container .prev {
+  right: 27px;
+}
+
+.location * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.location .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease;
+}
+
+.location .active,
+.location .dot:hover {
+  background-color: #717171;
+}
+
+@-webkit-keyframes location-fade {
+  0% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes location-fade {
+  0% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .location .next,
+  .location .prev,
+  .location .textVK {
+    font-size: 11px;
+  }
+}
+
+.location button {
+  width: 100%;
+  background-color: #194E91;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 15px 0 0 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 36px;
+}
+
+.location button:hover {
+  background-color: #062E54;
+}

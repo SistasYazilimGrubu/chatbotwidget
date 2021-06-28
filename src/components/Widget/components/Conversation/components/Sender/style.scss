@@ -1,0 +1,94 @@
+@import "variables.scss";
+
+.conversation-container {
+  .sender {
+    align-items: center;
+    display: flex;
+    background-color: #FAFAFA;
+    height: 60px;
+    padding: 0;
+    border-top: 2px solid #EEEEEE;
+  }
+
+  .new-message {
+    width: 100%;
+    border: 0;
+    background-color: #FAFAFA;
+    height: auto;
+    //line-height: 36px;
+    padding: 0 0 0 25px;
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    color: #194E91;
+  }
+
+  input {
+    outline: none;
+  }
+
+  button {
+    outline: none;
+    height: 100%;
+  }
+
+  .send {
+    background-color: #FAFAFA;
+    border: none;
+    padding: 0 18px 0 10px;
+
+    .send-icon {
+      height: 25px;
+      border: none;
+    }
+  }
+
+  .new-message::placeholder {
+    font-size: 16px !important;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    color: #ccc;
+  }
+
+  .new-message::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif !important;
+    font-weight: 400;
+    color: #ccc;
+  }
+
+  .new-message::-moz-placeholder {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400 !important;
+    color: #ccc;
+  }
+
+  .new-message:-ms-input-placeholder {
+    font-size: 16px !important;
+    font-family: 'Hind', sans-serif !important;
+    font-weight: 400 !important;
+    color: #ccc !important;
+  }
+
+  .new-message::-ms-input-placeholder {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    color: #ccc !important;
+  }
+
+  @media screen and (max-width: 815px) {
+    .sender {
+      border-radius: 0;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.widget-embedded {
+  .sender {
+    flex: 0 0 auto;
+    height: 60px;
+  }
+}

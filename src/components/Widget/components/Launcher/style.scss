@@ -1,0 +1,115 @@
+@import "common.scss";
+@import "variables.scss";
+@import "animation.scss";
+
+.launcher {
+  pointer-events: all;
+
+  @include animation(0, 0.5s, slide-in);
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-name: slide-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: .5s;
+  -moz-animation-name: slide-in;
+  -moz-animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-duration: .5s;
+  animation-name: slide-in;
+  animation-fill-mode: forwards;
+  display: table;
+  border: 0;
+  border-radius: 10px;
+  height: 55px;
+  width: 55px;
+  position: relative;
+  background-color: transparent;
+  box-shadow: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  &.full-screen {
+    @include launcher-fs;
+  }
+}
+
+.unread-count-pastille {
+  background-color: #062E54;
+  color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 700;
+}
+
+.open-launcher {
+  @include animation(0, 0.5s, rotation-rl);
+}
+
+.close-launcher {
+  width: 25px !important;
+  max-height: 25px !important;
+  top: 15px !important;
+  left: 15px !important;
+
+  @include animation(0, 0.5s, rotation-lr);
+}
+
+@media screen and (max-width: 815px) {
+  .launcher {
+    @include launcher-fs;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+}
+
+.launcher:before {
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E51A92;
+  background-color: var(--widget-color, #E51A92);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 1px rgba(229, 26, 146, 0.3);
+  box-shadow: 0 2px 10px 1px var(--widget-color);
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+  transition: all .25s ease;
+}
+
+.launcher:hover:before {
+  transform: rotate(45deg);
+  transition: all .25s ease;
+}
+
+.launcher.hide-sm:hover:before {
+  transform: rotate(0deg);
+  transition: all .25s ease;
+}
+
+.launcher img {
+  width: 32px;
+  max-height: 32px;
+  display: block;
+  top: 12px;
+  left: 12px;
+  position: absolute;
+}

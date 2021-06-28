@@ -1,0 +1,32 @@
+.dynamic-table-title {
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+}
+
+.dynamic-table {
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  width: 100%;
+}
+
+.dynamic-table td, .dynamic-table th, .dynamic-table tr {
+  border-top: 1px solid #DAE5F2;
+  width: 35%;
+}
+
+.dynamic-table-response {
+  background-color: #F0F4F9;
+  border: 1px solid #DAE5F2;
+  color: #062E54;
+  border-radius: 0 15px 15px 15px;
+  padding: 15px;
+  max-width: 250px;
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  width: 100%;
+  margin-top: 0;
+}

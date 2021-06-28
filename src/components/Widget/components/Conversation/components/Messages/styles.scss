@@ -1,0 +1,39 @@
+@import "variables.scss";
+@import "common.scss";
+
+.messages-container {
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.widget-embedded {
+  .messages-container {
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+button span {
+  pointer-events: none;
+}
+
+#informationForm {
+  display: none;
+  height: 100%;
+}
+
+.full-screen {
+  .messages-container {
+    @include messages-container-fs;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .messages-container {
+    @include messages-container-fs;
+  }
+}

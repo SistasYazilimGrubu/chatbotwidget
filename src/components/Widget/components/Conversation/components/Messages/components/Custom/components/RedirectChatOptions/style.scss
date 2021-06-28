@@ -1,0 +1,74 @@
+/*.redirect-options {
+  padding-top: 5%;
+  width: 100%;
+  text-align: center;
+
+  .accept {
+    float: left;
+    width: 48%;
+    background-color: #194E91;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .nonaccept {
+    float: right;
+    width: 48%;
+    background-color: #E51A92;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .accept:disabled {
+    cursor: auto;
+  }
+
+  .nonaccept:disabled {
+    cursor: auto;
+  }
+}*/
+
+.redirect-options {
+  padding-top: 5%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redirect-options .accept, .redirect-options .nonaccept {
+  width: 48%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.redirect-options .accept {
+  background-color: #194e91;
+  color: #fff;
+  border: 1px solid #194e91;
+}
+
+.redirect-options .nonaccept {
+  background-color: #f0f4f9;
+  color: #194e91;
+  border: 1px solid #194e91;
+}
+
+.redirect-options .accept:disabled {
+  cursor: auto;
+}
+
+.redirect-options .nonaccept:disabled {
+  cursor: auto;
+}
