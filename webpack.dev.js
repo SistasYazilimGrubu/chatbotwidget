@@ -25,14 +25,14 @@ module.exports = env => {
             proxy: [
                 {
                     context: ['/websocket'],
-                    target: 'ws://82.222.241.186:' + (env && env.hasOwnProperty('admin') ? '32301': '32300'),
+                    target: 'ws://chatbot.sistas.com.tr:' + (env && env.hasOwnProperty('admin') ? '32301': '32300'),
                     ws: true
                 }, {
                     context: ['/api'],
-                    target: 'http://82.222.241.186:' + (env && env.hasOwnProperty('admin') ? '32301': '32300')
+                    target: 'http://chatbot.sistas.com.tr:' + (env && env.hasOwnProperty('admin') ? '32301': '32300')
                 }, {
                     context: ['/content'],
-                    target: 'http://82.222.241.186:' + (env && env.hasOwnProperty('admin') ? '32301': '32300')
+                    target: 'http://chatbot.sistas.com.tr:' + (env && env.hasOwnProperty('admin') ? '32301': '32300')
                 }
             ],
         },
